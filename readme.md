@@ -11,9 +11,9 @@ Files breakdown:
 ```
 ./
 ./data/ (Contains dump data)
-./data/lat[-90 to 90] (Latitude ceiling for the spawnpoint, -8.415 goes to lat-8)
-./data/lat[-90 to 90]/long[-180 to 180]/ (Longitude ceiling for the spawnpoint)
-./data/lat[-90 to 90]/long[-180 to 180]/[spawnpoint_id] (The JSON file contaning the spawnpoint data)
+./data/lat[-90 to 90] (Latitude floor for the spawnpoint, -8.415 goes to lat-8)
+./data/lat[-90 to 90]/long[-180 to 180]/ (Longitude floor for the spawnpoint)
+./data/lat[-90 to 90]/long[-180 to 180]/[spawnpoint_id] (The JSON file containing the spawnpoint data)
 ```
 
 Inside the spawnpoint file the dump is structured like this:
@@ -33,7 +33,7 @@ Inside the spawnpoint file the dump is structured like this:
             ]
 }
 ```
-This saves space compared to .csv and .sql files, due to not repeating the same values over and over, and uses a universal and easily parsable format (json).
+This saves space compared to .csv and .sql files, due to not repeating the same values over and over, and uses a universal and easily parseable format (.json).
 
 ### How to restore data
 
