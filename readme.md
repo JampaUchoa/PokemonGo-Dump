@@ -44,11 +44,13 @@ ruby csv.rb
 
 ### How to send data
 
-Upcoming...
+If you have the data stored with Sqlite and PokemonGo-Map do the following:
+  * Go to the PokemonGo-Map folder and find the ```pogom.db``` file
+  * Copy the file to this project folder (PokemonGo-Dump)
+  * Run ``` python sqlite.py  ```
 
 ### Upcoming Features
 
-* Ability to get pogom.db dumps
 * Parse Mysql PokemonGo-Map dumps
 * Run tools in other languages (Python, NodeJS)
 * Better CSV parameters
