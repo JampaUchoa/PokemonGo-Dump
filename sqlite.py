@@ -35,9 +35,9 @@ with db:
         longitude = row[4]
         disappear_time = row[-1].strftime("%s")
 
-        create_dir("test")
+        create_dir("data")
 
-        lat = "test/lat%d" % math.ceil(latitude)
+        lat = "data/lat%d" % math.ceil(latitude)
         lon = "%s/lon%d" % (lat, math.ceil(longitude))
 
         create_dir(lat)
@@ -59,7 +59,7 @@ with db:
             else:
                 spawn["pokemons"].append({encounter_id: {"id": pokemon_id, "time": disappear_time}})
             with open(json_file, 'w') as data_file:
-                data_file.write(json.dumps(spawn, sort_keys = True))
+                data_file.write(json.dumps(spawn, sort_keys = True, separators=(',', ':')))
 
         else:
             spawn = {}
@@ -70,6 +70,4 @@ with db:
             spawn["pokemons"].append({encounter_id: {"id": pokemon_id, "time": disappear_time}})
 
             with open(json_file, 'w') as data_file:
-                data_file.write(json.dumps(spawn, sort_keys = True))
-
-        #    print json.dumps(spawn)
+                data_file.write(json.dumps(spawn, sort_keys = True, separators=(',', ':')))

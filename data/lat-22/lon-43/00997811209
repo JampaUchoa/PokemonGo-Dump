@@ -1,1 +1,1 @@
-{"id":"00997811209","latitude":-22.8192762159157,"longitude":-43.1882228975351,"spawn_time":270,"pokemons":[{"MTE2MjY4MzQwODgxMzU0OTgxMDk=":{"id":13,"time":1475103870}}]}
+{"id": "00997811209","latitude": -22.8192762159157,"longitude": -43.1882228975351,"pokemons": [{"MTE2MjY4MzQwODgxMzU0OTgxMDk=": {"id": 13,"time": 1475103870}},{"MTg0MDkyNzMzMzc3NDUzNDU2Nzc=": {"id": 33,"time": "1475118270"}}],"spawn_time": 270}
